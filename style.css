@@ -1,0 +1,217 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #141e30,
+            #243b55
+        );
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+
+    text-align: center;
+
+    color: white;
+}
+
+.container h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.container > p {
+    color: #d5d5d5;
+    margin-bottom: 25px;
+}
+
+.converter {
+    background: white;
+    color: #222;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: block;
+
+    text-align: left;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    background: white;
+
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #243b55;
+}
+
+input {
+    margin-bottom: 25px;
+}
+
+.currency-box {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+.currency-field {
+    flex: 1;
+}
+
+#swap {
+    flex-shrink: 0;
+
+    width: 45px;
+    height: 45px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #243b55;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+#swap:hover {
+    transform: rotate(180deg);
+
+    transition: 0.3s;
+}
+
+#convert {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #243b55;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#convert:hover {
+    opacity: 0.9;
+
+    transform: translateY(-1px);
+}
+
+.result {
+    margin-top: 25px;
+
+    padding: 22px;
+
+    border-radius: 12px;
+
+    background: #f4f6f8;
+}
+
+#result {
+    font-size: 25px;
+
+    margin-bottom: 8px;
+
+    word-wrap: break-word;
+}
+
+#rate {
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .container h1 {
+        font-size: 32px;
+    }
+
+    .converter {
+        padding: 20px;
+    }
+
+    .currency-box {
+        flex-direction: column;
+    }
+
+    .currency-field {
+        width: 100%;
+    }
+
+    #swap {
+        margin-top: 0;
+
+        transform: rotate(90deg);
+    }
+
+    #swap:hover {
+        transform: rotate(270deg);
+    }
+
+}
+```
